@@ -31,11 +31,18 @@ body{
   color: #fff;
 }
 
-.SocialMedia{
+.wrapper{
   margin-top: 20px;
+}
+.wrapper h3{
+  font-size: 30px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 10px;
+
 }
 .SocialMedia a{
   color: #fff;
-  font-size: 30px;
+  font-size: 40px;
   margin: 0 10px;
 }
