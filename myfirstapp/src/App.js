@@ -4,7 +4,7 @@ import {SocialMedia} from './Components/socialmedia'
 function App() {
   return (
     <>
-    <MainBody imageurl="./img/img.png"/>
+    <MainBody imageurl="img.png"/>
     <SocialMedia/>
     </>
     );
