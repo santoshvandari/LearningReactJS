@@ -9,7 +9,7 @@ const Typewriter = ({ text, delay, infinite }) => {
 
     if (currentIndex <= text.length) {
       timeout = setTimeout(() => {
-        setCurrentText(prevText => prevText + text[currentIndex]);
+        setCurrentText(prevText => prevText + text[currentIndex-1]);
         setCurrentIndex(prevIndex => prevIndex + 1);
       }, delay);
 
