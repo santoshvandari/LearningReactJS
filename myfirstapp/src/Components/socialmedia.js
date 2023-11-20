@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const socialmedia = (props)=>{
+export const SocialMedia = (props)=>{
     return (
         <div>
             <a href='https://www.facebook.com/santoshvandari.me'>Facebook</a>
