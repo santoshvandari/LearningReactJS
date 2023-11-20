@@ -18,4 +18,22 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
+  text-align: center;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+.imageWrapper img{
+  width: 300px;
+  border-radius: 50%;
+  border: 10px solid #fff;
+}
+.imageWrapper h1{
+  font-size: 48px;
+  color:#c3f5ff;
+  margin: 6px 0px;
+  font-weight: 600;
+}
+.imageWrapper p{
+  font-weight: 400;
+  font-size: 38px;
+  color: #fff;
 }
