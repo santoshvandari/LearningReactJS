@@ -18,9 +18,10 @@ button{
     border: none;
     background: darkslateblue;
     border-radius: 10px;
-    color: #fcfccc;
+    color: #ffffff;
     cursor: pointer;
 }
 button:hover{
-    
+    background: #0ff;
+    color: #000;
 }
