@@ -1,10 +1,17 @@
 import { React, useState,useEffect } from "react"
 import './Button.css'
 
+
 const Button = () => {
+   const [count, setCount] = useState(0)
+    const Counter = () => {
+        setCount(count + 1)
+    }
+
   return (
     <div className="btn-wrapper">
-      <button>Count</button>
+        <p className="data">{count}</p>
+      <button onClick={Counter}>Count</button>
     </div>
   )
 }

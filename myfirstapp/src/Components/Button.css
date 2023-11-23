@@ -1,0 +1,29 @@
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 50px);
+    /* margin: 10px 0; */
+}
+.data{
+    font-size: 40px;
+    color: #fcfcfc;
+    font-weight: bold;
+    margin: 10px 0;
+
+}
+.btn-wrapper button{
+    padding: 10px 20px;
+    font-size: 20px;
+    background: #554848;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn-wrapper button:hover{
+    background: #f00;
+    transition: all 0.3s ease;
+}
