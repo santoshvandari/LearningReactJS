@@ -5,3 +5,22 @@
     flex-direction: column;
     height: 100vh;
 }
+.count{
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+}
+button{
+    margin: 0 10px;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0px 20px;
+    border: none;
+    background: darkslateblue;
+    border-radius: 10px;
+    color: #fcfccc;
+    cursor: pointer;
+}
+button:hover{
+    
+}
