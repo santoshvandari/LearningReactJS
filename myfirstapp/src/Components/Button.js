@@ -7,6 +7,9 @@ const Button = () => {
     const Counter = () => {
         setCount(count + 1)
     }
+    useEffect(()=>{
+        document.title = `Counter(${count})`;
+},[count])
 
   return (
     <div className="btn-wrapper">
