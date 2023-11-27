@@ -132,8 +132,8 @@
   /**
    * Hero type effect
    */
-  // const typed = select('.typing')
-  let typed=true;
+  const typed = select('#typing')
+  // let typed=true;
   if (typed) {
     console.log("Hello")
     let typed_strings=["Designer, Developer, Freelancer, Photographer"]
