@@ -31,14 +31,18 @@ function App() {
   return (
     <>
       <div className='container'>
-        <img src="img.jpg" alt="Santosh Bhandari" />
+        <Avatar />
         <Introduction />
         <Buttons />
       </div>
     </>
   );
 }
-
+function Avatar(){
+  return (
+        <img src="img.jpg" alt="Santosh Bhandari" />
+  )
+}
 const Introduction = () => {
   return (
     <>
