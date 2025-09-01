@@ -11,7 +11,8 @@ body{
 }
 div.container{
   border: 3px solid black;
-  width: 450px;
+  width: 400px;
+  margin-top: 10px;
 }
 
 div img{
