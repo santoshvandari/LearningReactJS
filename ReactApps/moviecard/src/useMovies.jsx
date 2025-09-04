@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const KEY = "f84fc31d";
+const KEY = "<KEY_HERE>";
 
 export function useMovies(query) {
     const [movies, setMovies] = useState([]);
