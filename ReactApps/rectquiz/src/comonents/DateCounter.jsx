@@ -1,16 +1,16 @@
 import { useEffect, useReducer } from "react";
 
-import Header from "./comonents/Header";
-import Main from "./comonents/Main";
-import Loader from "./comonents/Loader";
-import Error from "./comonents/Error";
-import StartScreen from "./comonents/StartScreen";
-import Question from "./comonents/Question";
-import NextButton from "./comonents/NextButton";
-import Progress from "./comonents/Progress";
-import FinishScreen from "./comonents/FinishScreen";
-import Footer from "./comonents/Footer";
-import Timer from "./comonents/Timer";
+import Header from "./Header";
+import Main from "./Main";
+import Loader from "./Loader";
+import Error from "./Error";
+import StartScreen from "./StartScreen";
+import Question from "./Question";
+import NextButton from "./NextButton";
+import Progress from "./Progress";
+import FinishScreen from "./FinishScreen";
+import Footer from "./Footer";
+import Timer from "./Timer";
 
 const SECS_PER_QUESTION = 30;
 
@@ -67,14 +67,6 @@ function reducer(state, action) {
             };
         case "restart":
             return { ...initialState, questions: state.questions, status: "ready" };
-        // return {
-        //   ...state,
-        //   points: 0,
-        //   highscore: 0,
-        //   index: 0,
-        //   answer: null,
-        //   status: "ready",
-        // };
 
         case "tick":
             return {
