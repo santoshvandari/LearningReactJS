@@ -1,10 +1,14 @@
-import './App.css'
+import Header from "./component/Header"
+import Main from "./component/Main"
+import Footer from "./component/Footer"
 
 function App() {
 
   return (
     <>
-      <h1>Hello World</h1>
+      <Header />
+      <Main />
+      <Footer />
     </>
   )
 }
