@@ -1,3 +1,4 @@
+import ImageSection from "./ImageSection"
 
 function HeroSection() {
     return (
@@ -13,18 +14,7 @@ function HeroSection() {
             <div className="container">
                 <div className="hero-content">
                     <div className="profile-section" data-aos="fade-up" data-aos-delay="300">
-                        <div className="image-container">
-                            <div className="profile-ring"></div>
-                            <div className="image">
-                                <img src="public/img.png"
-                                    alt="Santosh Bhandari - Professional Backend Developer and Full-Stack Engineer from Nepal"
-                                    loading="eager" width="200" height="200"/>
-                            </div>
-                            <div className="status-indicator">
-                                <span className="status-dot"></span>
-                                <span className="status-text">Available for work</span>
-                            </div>
-                        </div>
+                            <ImageSection />
 
                         <div className="name-section">
                             <h1 className="main-title">
