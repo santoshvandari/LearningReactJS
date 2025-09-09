@@ -1,4 +1,22 @@
-import React from 'react'
+import CVData from "./CVData"
+
+const JourneyHighlights = [
+    {
+        "title": "Santosh Bhandari's Full-Stack Expertise",
+        "description": "Proficient in Python, and JavaScript with modern frameworks like Django, FastAPI, and React.js",
+        "icon": "bi-code-slash"
+    },
+    {
+        "title": "Database Optimization Specialist",
+        "description": "Expert in PostgreSQL, MongoDB, and Redis performance tuning with years of hands-on experience",
+        "icon": "bi-database"
+    },
+    {
+        "title": "Professional API Development",
+        "description": "Building high-performance RESTful and GraphQL APIs for clients worldwide from Nepal",
+        "icon": "bi-lightning"
+    }
+]
 
 const AboutStat = () => {
     return (
@@ -13,53 +31,20 @@ const AboutStat = () => {
                     professional journey in web development.</p>
 
                 <div className="journey-highlights">
-                    <article className="highlight-item">
-                        <div className="highlight-icon">
-                            <i className="bi bi-code-slash"></i>
-                        </div>
-                        <div className="highlight-text">
-                            <h3>Santosh Bhandari's Full-Stack Expertise</h3>
-                            <p>Proficient in Python, and JavaScript with modern frameworks like Django,
-                                FastAPI, and React.js</p>
-                        </div>
-                    </article>
-
-                    <article className="highlight-item">
-                        <div className="highlight-icon">
-                            <i className="bi bi-database"></i>
-                        </div>
-                        <div className="highlight-text">
-                            <h3>Database Optimization Specialist</h3>
-                            <p>Expert in PostgreSQL, MongoDB, and Redis performance tuning with years of
-                                hands-on experience</p>
-                        </div>
-                    </article>
-
-                    <article className="highlight-item">
-                        <div className="highlight-icon">
-                            <i className="bi bi-lightning"></i>
-                        </div>
-                        <div className="highlight-text">
-                            <h3>Professional API Development</h3>
-                            <p>Building high-performance RESTful and GraphQL APIs for clients worldwide from
-                                Nepal</p>
-                        </div>
-                    </article>
+                    {JourneyHighlights.map((item, index) => (
+                        <article className="highlight-item" key={item.title}>
+                            <div className="highlight-icon">
+                                <i className={`bi ${item.icon}`}></i>
+                            </div>
+                            <div className="highlight-text">
+                                <h3>{item.title}</h3>
+                                <p>{item.description}</p>
+                            </div>
+                        </article>
+                    ))}
                 </div>
-                {/* <!-- Download CV block --> */}
-                <div className="download-cv" data-aos="fade-up" data-aos-delay="150">
-                    <div className="cv-text">Prefer a quick overview?</div>
-                    <div className="cv-actions">
-                        <a href="files/cv.pdf" target="_blank" className="btn-secondary">
-                            <i className="bi bi-file-earmark-text"></i>
-                            View CV
-                        </a>
-                        <a href="files/cv.pdf" download className="btn-primary">
-                            <i className="bi bi-download"></i>
-                            Download CV
-                        </a>
-                    </div>
-                </div>
+
+                <CVData />
             </div>
         </div>
     )
