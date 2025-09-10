@@ -1,5 +1,24 @@
 import React from 'react'
 
+const Skills = [
+    {
+        category: "Programming Languages",
+        icon: "bi-code-slash",
+        items: ["Python", "JavaScript", "PHP"]
+    },
+    {
+        category: "Frameworks & Tools",
+        icon: "bi-stack",
+        items: ["Django", "FastAPI", "Flask"]
+    },
+    {
+        category: "Databases",
+        icon: "bi-database",
+        items: ["PostgreSQL", "MongoDB", "MySQL"]
+    }
+]
+
+
 export default function SkillSection() {
     return (
         <section id="skills">
@@ -15,77 +34,25 @@ export default function SkillSection() {
 
             <div class="skills-wrapper">
                 <div class="skills-categories">
-                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-                        <div class="category-header">
-                            <i class="bi bi-code-slash"></i>
-                            <h3>Programming Languages</h3>
-                        </div>
-                        <div class="skills-list">
-                            <div class="skill-item">
-                                <span class="skill-name">Python</span>
+                    {
+                        Skills.map((skill, index) => (
+                            <div class="skill-category" data-aos="fade-up" data-aos-delay={`${index * 100}`}>
+                                <div class="category-header">
+                                    <i class={`bi ${skill.icon}`}></i>
+                                    <h3>{skill.category}</h3>
+                                </div>
+                                <div class="skills-list">
+                                    {
+                                        skill.items.map(item => (
+                                            <div class="skill-item">
+                                                <span class="skill-name">{item}</span>
+                                            </div>
+                                        ))
+                                    }
+                                </div>
                             </div>
-                            <div class="skill-item">
-                                <span class="skill-name">JavaScript</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">PHP</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                        <div class="category-header">
-                            <i class="bi bi-stack"></i>
-                            <h3>Frameworks & Tools</h3>
-                        </div>
-                        <div class="skills-list">
-                            <div class="skill-item">
-                                <span class="skill-name">Django</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">FastAPI</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">Flask</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-                        <div class="category-header">
-                            <i class="bi bi-database"></i>
-                            <h3>Databases</h3>
-                        </div>
-                        <div class="skills-list">
-                            <div class="skill-item">
-                                <span class="skill-name">PostgreSQL</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">MongoDB</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">MySQL</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
-                        <div class="category-header">
-                            <i class="bi bi-layout-text-window-reverse"></i>
-                            <h3>Frontend Technologies</h3>
-                        </div>
-                        <div class="skills-list">
-                            <div class="skill-item">
-                                <span class="skill-name">HTML5</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">CSS3</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">React.js</span>
-                            </div>
-                        </div>
-                    </div>
+                        ))
+                    }
                 </div>
             </div>
         </section>
