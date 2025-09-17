@@ -1,4 +1,5 @@
 import React from 'react'
+import ContactForm from './ContactForm'
 
 export default function ContactSection() {
     return (
@@ -79,52 +80,7 @@ export default function ContactSection() {
                             </div>
                         </div>
 
-                        <div class="contact-form-container">
-                            <div class="form-card" data-aos="zoom-in" data-aos-delay="400">
-                                <div class="form-header">
-                                    <h3>Send Message</h3>
-                                    <p>Have a project in mind? Let's discuss it!</p>
-                                </div>
-
-                                <form action="success.html" method="post" data-netlify="true" autocomplete="off"
-                                    data-netlify-recaptcha="true" class="contact-form">
-                                    <div class="form-group">
-                                        <label for="name">Full Name</label>
-                                        <input type="text" id="name" name="name" placeholder="John Doe" required/>
-                                            <div class="input-highlight"></div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="email">Email Address</label>
-                                        <input type="email" id="email" name="email" placeholder="john@example.com" required/>
-                                            <div class="input-highlight"></div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="subject">Subject</label>
-                                        <input type="text" id="subject" name="subject" placeholder="Project Discussion"
-                                            required/>
-                                            <div class="input-highlight"></div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="message">Message</label>
-                                        <textarea name="message" id="message"
-                                            placeholder="Tell me about your project requirements..." required></textarea>
-                                        <div class="input-highlight"></div>
-                                    </div>
-
-                                    <div data-netlify-recaptcha="true"></div>
-
-                                    <button type="submit" class="submit-btn">
-                                        <span class="btn-text">Send Message</span>
-                                        <span class="btn-icon"><i class="bi bi-send"></i></span>
-                                        <div class="btn-ripple"></div>
-                                    </button>
-                                </form>
-                                
-                            </div>
-                        </div>
+                    <ContactForm />
                     </div>
                 </div>
             </section>
