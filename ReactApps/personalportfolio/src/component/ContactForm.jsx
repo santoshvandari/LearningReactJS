@@ -9,7 +9,7 @@ function ContactForm() {
                     <p>Have a project in mind? Let's discuss it!</p>
                 </div>
 
-                <form action="success.html" method="post" data-netlify="true" autocomplete="off"
+                <form action="success.html" method="post" data-netlify="true" autoComplete="off"
                     data-netlify-recaptcha="true" className="contact-form">
                     <div className="form-group">
                         <label htmlFor="name">Full Name</label>

@@ -77,33 +77,33 @@ const ProfessionCardInfo = [
 export default function ProfessionalSection() {
     return (
         <section id="services">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">
-                    <span class="section-number">03.</span>
+            <div className="section-header" data-aos="fade-up">
+                <h2 className="section-title">
+                    <span className="section-number">03.</span>
                     Professional Services by Santosh Bhandari
                 </h2>
-                <div class="section-line"></div>
+                <div className="section-line"></div>
                 {/* <p style="color: #a8b2d1; text-align: center; margin-top: 1rem;">s</p> */}
                 <p style={{color:"#a8b2d1",textAlign:"center",marginTop:"1rem"}}>Backend development and full-stack solution</p>
             </div>
 
-            <div class="services-wrapper">
-                <div class="services-grid">
+            <div className="services-wrapper">
+                <div className="services-grid">
                     {
                         ProfessionCardInfo.map((card, index) => (
-                            <div class="service-card" data-aos="fade-up" data-aos-delay={index * 100} key={index}>
-                                <div class="card-inner">
-                                    <div class="card-front">
-                                        <div class="service-icon">
-                                            <i class={card.iconClass}></i>
+                            <div className="service-card" data-aos="fade-up" data-aos-delay={index * 100} key={index}>
+                                <div className="card-inner">
+                                    <div className="card-front">
+                                        <div className="service-icon">
+                                            <i className={card.iconClass}></i>
                                         </div>
-                                        <h3 class="service-title">{card.serviceTitle}</h3>
-                                        <p class="service-preview">{card.servicePreview}</p>
-                                        <div class="card-overlay">
+                                        <h3 className="service-title">{card.serviceTitle}</h3>
+                                        <p className="service-preview">{card.servicePreview}</p>
+                                        <div className="card-overlay">
                                             <span>Learn More</span>
                                         </div>
                                     </div>
-                                    <div class="card-back">
+                                    <div className="card-back">
                                         <h3>{card.serviceTitle}</h3>
                                         <p>{card.description}</p>
                                         <ul>
