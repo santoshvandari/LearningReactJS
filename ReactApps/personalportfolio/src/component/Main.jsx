@@ -5,6 +5,7 @@ import SkillSection from './SkillSection'
 import ProfessionalSection from './ProfessionalSection'
 import ContactSection from './ContactSection'
 
+
 function Main() {
     return (
         <main>

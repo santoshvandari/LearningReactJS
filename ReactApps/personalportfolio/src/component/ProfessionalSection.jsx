@@ -83,8 +83,8 @@ export default function ProfessionalSection() {
                     Professional Services by Santosh Bhandari
                 </h2>
                 <div class="section-line"></div>
-                <p style="color: #a8b2d1; text-align: center; margin-top: 1rem;">Backend development and full-stack
-                    solutions</p>
+                {/* <p style="color: #a8b2d1; text-align: center; margin-top: 1rem;">s</p> */}
+                <p style={{color:"#a8b2d1",textAlign:"center",marginTop:"1rem"}}>Backend development and full-stack solution</p>
             </div>
 
             <div class="services-wrapper">
