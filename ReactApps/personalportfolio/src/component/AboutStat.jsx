@@ -31,7 +31,7 @@ const AboutStat = () => {
                     professional journey in web development.</p>
 
                 <div className="journey-highlights">
-                    {JourneyHighlights.map((item, index) => (
+                    {JourneyHighlights.map((item) => (
                         <article className="highlight-item" key={item.title}>
                             <div className="highlight-icon">
                                 <i className={`bi ${item.icon}`}></i>

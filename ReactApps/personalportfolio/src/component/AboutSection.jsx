@@ -1,6 +1,42 @@
 import React from 'react'
 import AboutStat from './AboutStat'
 
+const pyCode = `
+class FullStackDeveloper:
+    def __init__(self):
+        self.name = "Santosh Bhandari"
+        self.role = "Full-Stack Developer"
+        self.location = "Nepal"
+        self.languages = ["Python", "JavaScript"]
+        self.frameworks = ["Django","Django Rest Framework", "FastAPI", "Flask"]
+        self.frontend = ["HTML5", "CSS3", "React.js"]
+        self.databases = ["PostgreSQL","MySQL", "MongoDB", "Redis"]
+        self.tools = ["Git", "Docker", "Linux"]
+        self.specialty = "Backend-focused full-stack"
+        self.current_focus = "Building scalable web applications"
+
+    def get_bio(self):
+        return (
+        """
+        Passionate full-stack developer with strong backend expertise.
+        I love building scalable APIs, optimizing databases, and creating
+        responsive user interfaces. Always eager to learn and solve
+        challenging problems through clean, efficient code.
+        """
+        )
+
+    def get_skills(self):
+        return {
+        "backend": self.languages + self.frameworks,
+        "frontend": self.frontend,
+        "databases": self.databases,
+        "tools": self.tools,
+        }
+
+    def is_available_for_work(self):
+        return True  # Always ready for new opportunities!
+`
+
 const AboutSection = () => {
     return (
         <section id="about">
@@ -27,40 +63,7 @@ const AboutSection = () => {
                             </div>
                             <div className="code-content">
                                 <pre><code className="language-python">
-                                    {`
-                                    class FullStackDeveloper:
-                                        def __init__(self):
-                                            self.name = "Santosh Bhandari"
-                                            self.role = "Full-Stack Developer"
-                                            self.location = "Nepal"
-                                            self.languages = ["Python", "JavaScript"]
-                                            self.frameworks = ["Django","Django Rest Framework", "FastAPI", "Flask"]
-                                            self.frontend = ["HTML5", "CSS3", "React.js"]
-                                            self.databases = ["PostgreSQL","MySQL", "MongoDB", "Redis"]
-                                            self.tools = ["Git", "Docker", "Linux"]
-                                            self.specialty = "Backend-focused full-stack"
-                                            self.current_focus = "Building scalable web applications"
-
-                                        def get_bio(self):
-                                            return (
-                                            """
-                                            Passionate full-stack developer with strong backend expertise.
-                                            I love building scalable APIs, optimizing databases, and creating
-                                            responsive user interfaces. Always eager to learn and solve
-                                            challenging problems through clean, efficient code.
-                                            """
-                                            )
-
-                                        def get_skills(self):
-                                            return {
-                                            "backend": self.languages + self.frameworks,
-                                            "frontend": self.frontend,
-                                            "databases": self.databases,
-                                            "tools": self.tools,
-                                            }
-
-                                        def is_available_for_work(self):
-                                            return True  # Always ready for new opportunities!`}
+                                    {pyCode}
                                 </code></pre>
                             </div>
                         </div>
