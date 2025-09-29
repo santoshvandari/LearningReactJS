@@ -1,19 +1,25 @@
-import Button from '@/components/Button/Button'
-import React from 'react'
-import Link from 'next/link'
+"use client";
+import Link from 'next/link';
 
-function NotFound() {
+export default function NotFound() {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-center px-6">
-            <h3 className="text-5xl font-bold text-white mb-4">404 - Page Not Found</h3>
-            <p className="text-gray-300 mb-6">
-                The page you are looking for does not exist or may have been moved.
-            </p>
-            <Link href="/">
-                <Button variant="primary">Go To Home</Button>
-            </Link>
-        </div>
-    )
+        <>
+                <div className="text-center max-w-md mx-auto px-6">
+                    <div className="text-8xl mb-4">🎬</div>
+                    <h1 className="text-4xl font-bold mb-4">404</h1>
+                    <h2 className="text-2xl font-semibold mb-4">Page Not Found</h2>
+                    <p className="text-gray-300 mb-8">
+                        The movie or page you&apos;re looking for doesn&apos;t exist.
+                    </p>
+                    <div className="space-y-4">
+                        <Link 
+                            href="/"
+                            className="block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors"
+                        >
+                            Back to Home
+                        </Link>
+                    </div>
+                </div>
+        </>
+    );
 }
-
-export default NotFound
