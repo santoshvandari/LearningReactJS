@@ -1,12 +1,12 @@
-import Card from '@/components/Card/Card';
 import React from 'react'
 
-export default async function page({params}) {
-    const {movieId} = await params;
-    console.log(movieId);
+async function page({params}) {
+    const {movieId} = await params
     return (
         <div>
-            <Card />
+            <h1>Movie {movieId}</h1>
         </div>
     )
 }
+
+export default page

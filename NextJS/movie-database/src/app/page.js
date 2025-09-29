@@ -1,7 +1,7 @@
 import Footer from '@/components/Footer/Footer'
 import Header from '@/components/Header/Header'
 import HeroSection from '@/components/HeroSection/HeroSection'
-import Search from '@/components/Search/Search'
+import MovieSection from '@/components/MovieSection/MovieSection'
 import React from 'react'
 
 function page() {
@@ -10,6 +10,7 @@ function page() {
             <Header />
             <main>
                 <HeroSection />
+                <MovieSection />
             </main>
             <Footer />
         </>
