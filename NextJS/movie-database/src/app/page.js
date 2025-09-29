@@ -1,10 +1,18 @@
+import Footer from '@/components/Footer/Footer'
+import Header from '@/components/Header/Header'
+import HeroSection from '@/components/HeroSection/HeroSection'
+import Search from '@/components/Search/Search'
 import React from 'react'
 
 function page() {
     return (
-        <div>
-            <h1>Home Page</h1>
-        </div>
+        <>
+            <Header />
+            <main>
+                <HeroSection />
+            </main>
+            <Footer />
+        </>
     )
 }
 
